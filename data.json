@@ -22,8 +22,8 @@
     },
      {
         "id": 2,
-        "project_name": "Interactive Form - Register for Fill Stack Conference",
-        "description": "I created a registration form for a tech conforence by adding conditional behavior and interactivyt to ensur users had a friendly experience. Additionally, I added error messages to ensure that users do no submit invalid form fields.",
+        "project_name": "Interactive Form - Register for Full Stack Conference",
+        "description": "I created a registration form for a tech conforence by adding conditional behavior and interactivity to ensur users had a friendly experience. Additionally, I added error messages to ensure that users do no submit invalid form fields.",
         "technologies" : [ "HTML", "css", "JavaScript", "DOM Manipulation", "Accessibility", "REGEX"],
         "live_link": "file:///Users/acamargo/Documents/Code/interactive-form-v3/Techdegree-Unit-3/index.html",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-3",
@@ -33,7 +33,7 @@
         "id": 3,
         "project_name": "OOP Game Show App",
         "description": "I created a browser-based, word guessing game: 'Phrase Hunter'. I used JavaScript and OOP to select a random, hidden phrase. A layer tries to guess the phrase by selecting individual letters from an onscreen keyboard.",
-        "technologies" : [ "HTML", "css", "JavaScript"],
+        "technologies" : [ "HTML", "css", "JavaScript", "OOP"],
         "live_link": "file:///Users/acamargo/Documents/Code/Unit%204/oop_game-v2/Techdegree-Unit-4-project/index.html",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-4-project",
         "image_urls": "/static/images/unit-4/1.png"
@@ -42,7 +42,7 @@
         "id": 4,
         "project_name": "Public API Request - Employee Directory",
         "description": "I ccreated an employee directory by communicating through an API (Application Programming Interface).",
-        "technologies" : [ "HTML", "css", "JavaScript"],
+        "technologies" : [ "HTML", "css", "JavaScript", "API"],
         "live_link": "file:///Users/acamargo/Documents/Code/Unit%205/Techdegree-Unit-5-project/student-files/index.html",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-5-project",
         "image_urls": "/static/images/unit-5/1.png"
