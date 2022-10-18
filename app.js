@@ -44,8 +44,8 @@ if (project) {
 
 
 //start server
-app.listen(3005, () =>{
-    console.log('The application is running on localhost:3005')
+app.listen(3006, () =>{
+    console.log('The application is running on localhost:3006')
 });
 
 //Error Handlers
@@ -65,7 +65,7 @@ app.use((err, req, res, next) => {
         res.status(404).render('not-found', {err});
     } else {
         err.message = err.message || 'Oops! It looks like something went wrong on the server.'
-        res.status(err.status || 500).render('error', {err});
+        console.error(err.message);
     }
 });
 
