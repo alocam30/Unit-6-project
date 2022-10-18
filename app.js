@@ -21,7 +21,7 @@ app.use('/static', express.static('public'));
 
 //index route
 app.get('/', (req, res) => {
-    res.render('index', {projects})
+    res.render('index', projects)
 })
 
 //about route
@@ -38,7 +38,7 @@ app.get('/projects/:id', (req, res, next) => {
 if (project) {
     res.render('project', {project});
 } else {
-    next(err);
+    next();
 }
 });
 
