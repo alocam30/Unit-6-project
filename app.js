@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 
 //data from data.json
 const { data } = require('./data');
-const projects = data.projects;
+const projects = data;
 
 //Body parser
 app.use(bodyParser.urlencoded({extended: false}));
@@ -43,11 +43,6 @@ if (project) {
 });
 
 
-//start server
-app.listen(3006, () =>{
-    console.log('The application is running on localhost:3006')
-});
-
 //Error Handlers
 //404 handler to catch undefined or non-existent route requests/
 //
@@ -68,5 +63,11 @@ app.use((err, req, res, next) => {
         console.error(err.message);
     }
 });
+
+//start server
+app.listen(3000, () =>{
+    console.log('The application is running on localhost:3000')
+});
+
 
 module.exports = app;
