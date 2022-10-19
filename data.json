@@ -1,7 +1,6 @@
-
-
-[
-    {
+{
+    "projects": [
+      {
         "id": 0,
         "project_name": "Random Quote Generator",
         "description": "This application is a random quote generator that aims to display a different quote each time the 'Show another quote' button is pushed.",
@@ -9,9 +8,8 @@
         "live_link": "file:///Users/acamargo/Desktop/GitHub/Techdegree-Unit-1-Project/a_random_quote_generator-v1/index.html",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-1-Project",
         "image_urls": "/static/images/unit-1/1.png" 
-
-    }, 
-    {
+      }, 
+      {
         "id": 1,
         "project_name": "Data Pagination and Filtering",
         "description": "The application displays nine students on a webpage made possible through the creation of pagination buttons.",
@@ -19,8 +17,8 @@
         "live_link": "file:///Users/acamargo/Documents/Code/Unit%202%20project/Techdegree-Unit-2-project/data-pagination-and-filtering-v1%20(1)/index.html",
         "github_link": "https://github.com/alocam30/Techdegree-Project-2",
         "image_urls": "/static/images/unit-2/1.png"
-    },
-     {
+      },
+      {
         "id": 2,
         "project_name": "Interactive Form - Register for Full Stack Conference",
         "description": "I created a registration form for a tech conforence by adding conditional behavior and interactivity to ensur users had a friendly experience. Additionally, I added error messages to ensure that users do no submit invalid form fields.",
@@ -28,8 +26,8 @@
         "live_link": "file:///Users/acamargo/Documents/Code/interactive-form-v3/Techdegree-Unit-3/index.html",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-3",
         "image_urls": "/static/images/unit-3/1.png"
-     },
-        {
+      },
+      {
         "id": 3,
         "project_name": "OOP Game Show App",
         "description": "I created a browser-based, word guessing game: 'Phrase Hunter'. I used JavaScript and OOP to select a random, hidden phrase. A layer tries to guess the phrase by selecting individual letters from an onscreen keyboard.",
@@ -47,4 +45,5 @@
         "github_link": "https://github.com/alocam30/Techdegree-Unit-5-project",
         "image_urls": "/static/images/unit-5/1.png"
       }
-]
+    ]
+  }

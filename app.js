@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 
 
 //data from data.json
-const { data } = require('./data.json');
-const projects = data;
+const { data } = require('./data');
+const projects = data.projects;
 
 //Body parser
 app.use(bodyParser.urlencoded({extended: false}));
@@ -21,7 +21,7 @@ app.use('/static', express.static('public'));
 
 //index route
 app.get('/', (req, res) => {
-    res.render('index', projects)
+    res.render('index', {projects})
 })
 
 //about route
