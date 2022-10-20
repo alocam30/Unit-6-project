@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-
 //data from data.json
 const { data } = require('./data.json');
 const projects = data;
@@ -47,20 +46,20 @@ if (project) {
 //404 handler to catch undefined or non-existent route requests/
 //
 
+
 app.use((req, res, next) => {
-    const err = new Error();
+    const err = new Error('Looks like the project you requested does not exist.');
     err.status = 404;
-    err.message = 'Looks like the project you requested does not exist.'
     next(err);
 });
 
 //global error handler
 app.use((err, req, res, next) => {
     if(err.status === 404) {
-        res.status(404).render('not-found', {err});
+        res.render('not-found', {err});
     } else {
-        err.message = err.message || 'Oops! It looks like something went wrong on the server.'
-        console.error(err.message);
+        res.status(err.status);
+        res.render('error', { err })
     }
 });
 
@@ -68,6 +67,3 @@ app.use((err, req, res, next) => {
 app.listen(3000, () =>{
     console.log('The application is running on localhost:3000')
 });
-
-
-module.exports = app;
