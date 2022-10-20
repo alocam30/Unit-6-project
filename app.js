@@ -15,13 +15,12 @@ app.set('view engine', 'pug');
 
 
 //static route
-
 app.use('/static', express.static('public'));
 
 //index route
 app.get('/', (req, res) => {
     res.render('index', {projects})
-})
+});
 
 //about route
 app.get('/about', (req, res) => {
