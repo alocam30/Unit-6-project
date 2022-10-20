@@ -47,8 +47,9 @@ if (project) {
 
 
 app.use((req, res, next) => {
-    const err = new Error('Looks like the project you requested does not exist.');
+    const err = new Error();
     err.status = 404;
+    err.message = 'Looks like the project you requested does not exist.';
     next(err);
 });
 
@@ -58,7 +59,7 @@ app.use((err, req, res, next) => {
         res.render('not-found', {err});
     } else {
         res.status(err.status);
-        res.render('error', { err })
+       console.log(err.message)
     }
 });
 
