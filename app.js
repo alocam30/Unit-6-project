@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 
 //data from data.json
-const { data } = require('./data');
+const { data } = require('./data.json');
 const projects = data;
 
 //Body parser
