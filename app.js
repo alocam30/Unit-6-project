@@ -58,8 +58,8 @@ app.use((err, req, res, next) => {
     if(err.status === 404) {
         res.render('not-found', {err});
     } else {
-        res.status(err.status);
-       console.log(err.message)
+        console.log(err.status);
+        console.log(err.message);
     }
 });
 
