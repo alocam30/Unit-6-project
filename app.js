@@ -36,17 +36,17 @@ app.use('/', indexRoute);
 
 // //dynamic routes for projects
 
-// app.get('/projects/:id', (req, res, next) => {
-//     const projectId = req.params.id
-//     const project = projects.find(({id}) => id === +projectId);
+app.get('/projects/:id', (req, res, next) => {
+    const projectId = req.params.id
+    const project = projects.find(({id}) => id === +projectId);
 
-// if (project) {
-//     res.render('project', {project});
-// } else {
-//     res.status = 404;
-//     next();
-// }
-// });
+if (project) {
+    res.render('project', {project});
+} else {
+    res.status = 404;
+    next();
+}
+});
 
 
 //Error Handlers
