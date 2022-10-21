@@ -14,7 +14,7 @@
         "project_name": "Data Pagination and Filtering",
         "description": "The application displays nine students on a webpage made possible through the creation of pagination buttons.",
         "technologies" : [ "HTML", "css", "JavaScript", "DOM Manipulation"],
-        "live_link": "file:///Users/acamargo/Documents/Code/Unit%202%20project/Techdegree-Unit-2-project/data-pagination-and-filtering-v1%20(1)/index.html",
+        "live_link": "https://alocam30.github.io/Techdegree-Project-2/",
         "github_link": "https://github.com/alocam30/Techdegree-Project-2",
         "image_urls": "/static/unit-2/1.png"
       },
@@ -32,7 +32,7 @@
         "project_name": "OOP Game Show App",
         "description": "I created a browser-based, word guessing game: 'Phrase Hunter'. I used JavaScript and OOP to select a random, hidden phrase. A layer tries to guess the phrase by selecting individual letters from an onscreen keyboard.",
         "technologies" : [ "HTML", "css", "JavaScript", "OOP"],
-        "live_link": "file:///Users/acamargo/Documents/Code/Unit%204/oop_game-v2/Techdegree-Unit-4-project/index.html",
+        "live_link": "https://alocam30.github.io/Techdegree-Unit-4-project/",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-4-project",
         "image_urls": "/static/unit-4/1.png"
       }, 
@@ -40,8 +40,8 @@
         "id": 4,
         "project_name": "Public API Request - Employee Directory",
         "description": "I ccreated an employee directory by communicating through an API (Application Programming Interface).",
-        "technologies" : [ "HTML", "css", "JavaScript", "API"],
-        "live_link": "file:///Users/acamargo/Documents/Code/Unit%205/Techdegree-Unit-5-project/student-files/index.html",
+        "technologies" : [ "HTML", "css", "JavaScript", "API", "REGEX"],
+        "live_link": "https://alocam30.github.io/Techdegree-Unit-5-project/",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-5-project",
         "image_urls": "/static/unit-5/1.png"
       }
