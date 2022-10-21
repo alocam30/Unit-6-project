@@ -64,8 +64,9 @@ app.use((req, res, next) => {
 //global error handler
 app.use((err, req, res, next) => {
     if(err.status === 404) {
-        res.send('Hello, sorry it did not work.')
-        // res.render('not-found', {err});
+        res.send('Oops, something went wrong!');
+        console.log('Oops, something went wrong!');
+        
     } else {
         console.log(err.status);
         console.log(err.message);

@@ -25,13 +25,13 @@ block content
           each technology in project.technologies
             li= technology
 
-        //- Add the href values to the links below
+        
         a.btn-link(href=`${project.live_link}`, target='_blank') Live Demo
         a.btn-link(href=`${project.github_link}`, target='_blank') GitHub Repo
 
     .project-img-box.box
 
-      //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
+      
       img.project-img(src=`${project.image_urls}`, alt=`screenshot of ${project.project_name}`)
 
     nav.nav
