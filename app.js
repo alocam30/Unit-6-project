@@ -1,44 +1,52 @@
 
 const express = require('express');
 const app = express();
+
 const bodyParser = require('body-parser');
+const path = require('path');
+const indexRoute = require('./index');
 
 //data from data.json
-const { data } = require('./data.json');
-const projects = data;
+const { projects } = require('./data.json');
 
 //Body parser
 app.use(bodyParser.urlencoded({extended: false}));
 
 //Setting 'view engine' to 'pug'
+//source: https://medium.com/@SigniorGratiano/server-side-rendering-with-pug-templates-e1e5947d4c1a
 app.set('view engine', 'pug');
+// app.set('views', path.join(__dirname, 'views'));
 
 
 //static route
-app.use('/static', express.static('public'));
+app.use('/static',express.static(path.join(__dirname, 'public')));
+app.use('/static',express.static(path.join(__dirname, 'images')));
 
-//index route
-app.get('/', (req, res) => {
-    res.render('index', {projects})
-});
+app.use('/', indexRoute);
 
-//about route
-app.get('/about', (req, res) => {
-    res.render('about')
-} );
+// //index route
+// app.get('/', (req, res) => {
+//     res.render('index', {projects})
+// });
 
-//dynamic routes for projects
+// //about route
+// app.get('/about', (req, res) => {
+//     res.render('about')
+// } );
 
-app.get('/projects/:id', (req, res, next) => {
-    const projectId = req.params.id
-    const project = projects.find(({id}) => id === +projectId);
+// //dynamic routes for projects
 
-if (project) {
-    res.render('project', {project});
-} else {
-    next();
-}
-});
+// app.get('/projects/:id', (req, res, next) => {
+//     const projectId = req.params.id
+//     const project = projects.find(({id}) => id === +projectId);
+
+// if (project) {
+//     res.render('project', {project});
+// } else {
+//     res.status = 404;
+//     next();
+// }
+// });
 
 
 //Error Handlers
@@ -56,7 +64,8 @@ app.use((req, res, next) => {
 //global error handler
 app.use((err, req, res, next) => {
     if(err.status === 404) {
-        res.render('not-found', {err});
+        res.send('Hello, sorry it did not work.')
+        // res.render('not-found', {err});
     } else {
         console.log(err.status);
         console.log(err.message);

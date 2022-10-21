@@ -5,9 +5,9 @@
         "project_name": "Random Quote Generator",
         "description": "This application is a random quote generator that aims to display a different quote each time the 'Show another quote' button is pushed.",
         "technologies" : [ "HTML", "css", "JavaScript"],
-        "live_link": "file:///Users/acamargo/Desktop/GitHub/Techdegree-Unit-1-Project/a_random_quote_generator-v1/index.html",
+        "live_link": "https://alocam30.github.io/Techdegree-Unit-1-Project/",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-1-Project",
-        "image_urls": "/static/images/unit-1/1.png" 
+        "image_urls": "/static/uni-1/1.png" 
       }, 
       {
         "id": 1,
@@ -16,16 +16,16 @@
         "technologies" : [ "HTML", "css", "JavaScript", "DOM Manipulation"],
         "live_link": "file:///Users/acamargo/Documents/Code/Unit%202%20project/Techdegree-Unit-2-project/data-pagination-and-filtering-v1%20(1)/index.html",
         "github_link": "https://github.com/alocam30/Techdegree-Project-2",
-        "image_urls": "/static/images/unit-2/1.png"
+        "image_urls": "/static/unit-2/1.png"
       },
       {
         "id": 2,
         "project_name": "Interactive Form - Register for Full Stack Conference",
         "description": "I created a registration form for a tech conforence by adding conditional behavior and interactivity to ensur users had a friendly experience. Additionally, I added error messages to ensure that users do no submit invalid form fields.",
         "technologies" : [ "HTML", "css", "JavaScript", "DOM Manipulation", "Accessibility", "REGEX"],
-        "live_link": "file:///Users/acamargo/Documents/Code/interactive-form-v3/Techdegree-Unit-3/index.html",
+        "live_link": "https://alocam30.github.io/Techdegree-Unit-3/",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-3",
-        "image_urls": "/static/images/unit-3/1.png"
+        "image_urls": "/static/unit-3/1.png"
       },
       {
         "id": 3,
@@ -34,7 +34,7 @@
         "technologies" : [ "HTML", "css", "JavaScript", "OOP"],
         "live_link": "file:///Users/acamargo/Documents/Code/Unit%204/oop_game-v2/Techdegree-Unit-4-project/index.html",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-4-project",
-        "image_urls": "/static/images/unit-4/1.png"
+        "image_urls": "/static/unit-4/1.png"
       }, 
       {
         "id": 4,
@@ -43,7 +43,7 @@
         "technologies" : [ "HTML", "css", "JavaScript", "API"],
         "live_link": "file:///Users/acamargo/Documents/Code/Unit%205/Techdegree-Unit-5-project/student-files/index.html",
         "github_link": "https://github.com/alocam30/Techdegree-Unit-5-project",
-        "image_urls": "/static/images/unit-5/1.png"
+        "image_urls": "/static/unit-5/1.png"
       }
     ]
   }
